@@ -1,0 +1,36 @@
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  h1 {
+    font-size: 3.25rem;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+  div {
+    position: relative;
+    margin-top: 6rem;
+    // Girl
+    img {
+      width: 150px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    // Pink circle
+    span {
+      display: block;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: var(--circleColor);
+      position: relative;
+      z-index: -1;
+    }
+  }
+}

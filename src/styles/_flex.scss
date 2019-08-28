@@ -1,0 +1,30 @@
+body {
+  // Typography
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--bgColor);
+  font-family: var(--sans);
+  color: var(--paragraphColor);
+  // Positioning with flexbox
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // Making it fullscreen
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1,
+h2 {
+  font-family: var(--serif);
+  color: var(--headingColor);
+}
+
+section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

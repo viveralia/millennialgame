@@ -1,0 +1,27 @@
+// CSS Variables
+:root {
+  // Canvas Bg color
+  --fadeColor1: #eefafa;
+  --fadeColor2: #d7fcfc;
+  // Body
+  --bgColor: #1f26a1;
+  // Other
+  --headingColor: #181746; // 181746
+  --paragraphColor: #555477; // 555477
+  --circleColor: #89f3ff;
+  --serif: 'Playfair Display', serif;
+  --sans: 'Lato', sans-serif;
+}
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Selection Color
+::selection {
+  background: var(--paragraphColor);
+  color: #fff;
+}

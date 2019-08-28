@@ -1,0 +1,8 @@
+.canvas-wrapper {
+  z-index: 1;
+  canvas {
+    background-color: var(--startingCanvasColor);
+    border-radius: 10px;
+    box-shadow: rgba(32, 33, 36, 0.1) 2px 3px 9px;
+  }
+}

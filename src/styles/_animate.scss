@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+/*!
+ * animate.css -https://daneden.github.io/animate.css/
+ * Version - 3.7.2
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2019 Daniel Eden
+ */
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s ease-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.slow {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+.animated.slowest {
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
+}
+
+.animated.fast {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+
+/*******************************
+************ PULSE *************
+*******************************/
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.175, 1.175, 1.175);
+    transform: scale3d(1.175, 1.175, 1.175);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.175, 1.175, 1.175);
+    transform: scale3d(1.175, 1.175, 1.175);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+/*******************************
+************* FADE *************
+*******************************/
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  animation-name: fade;
+}
+
+/*******************************
+******** BG COLOR CHANGE *******
+*******************************/
+
+@-webkit-keyframes bg-fade {
+  from {
+    background-color: var(--fadeColor1);
+  }
+  50% {
+    background-color: var(--fadeColor2);
+  }
+  to {
+    background-color: var(--fadeColor1);
+  }
+}
+
+@keyframes bg-fade {
+  from {
+    background-color: var(--fadeColor1);
+  }
+  50% {
+    background-color: var(--fadeColor2);
+  }
+  to {
+    background-color: var(--fadeColor1);
+  }
+}
+
+.bg-fade {
+  -webkit-animation-name: bg-fade;
+  animation-name: bg-fade;
+}
+
+/*******************************
+********** FADE OUT UP *********
+*******************************/
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+/*******************************
+************* OTHER ************
+*******************************/
+.hide {
+  display: none;
+}
