@@ -15,9 +15,10 @@ class GameBoard {
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height)
   }
   start() {
-    this.interval = setInterval(this.update(), 5)
+    this.interval = setInterval(() => this.update(), 5)
   }
   update() {
+    this.clear()
     this.frames++
     this.score += 0.01
   }
@@ -27,10 +28,6 @@ class GameBoard {
 }
 
 const board = new GameBoard()
-board.update()
-console.log(board.score)
-board.update()
-console.log(board.score)
 
 /********************************/
 /********** OBSTACLES **********/
