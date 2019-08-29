@@ -3,6 +3,10 @@
   canvas {
     background-color: var(--startingCanvasColor);
     border-radius: 10px;
-    box-shadow: rgba(32, 33, 36, 0.1) 2px 3px 9px;
+    transition: filter 0.25s ease-in-out;
   }
+}
+
+.loser {
+  filter: grayscale(1);
 }

@@ -26,8 +26,8 @@
 }
 
 .animated.slowest {
-  -webkit-animation-duration: 15s;
-  animation-duration: 15s;
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
 }
 
 .animated.fast {
@@ -60,16 +60,19 @@
   from {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
+    background-color: #59deec;
   }
 
   50% {
     -webkit-transform: scale3d(1.175, 1.175, 1.175);
     transform: scale3d(1.175, 1.175, 1.175);
+    background-color: #89f3ff;
   }
 
   to {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
+    background-color: #59deec;
   }
 }
 
@@ -131,8 +134,14 @@
   from {
     background-color: var(--fadeColor1);
   }
-  50% {
+  25% {
     background-color: var(--fadeColor2);
+  }
+  50% {
+    background-color: var(--fadeColor3);
+  }
+  75% {
+    background-color: var(--fadeColor4);
   }
   to {
     background-color: var(--fadeColor1);
@@ -145,7 +154,7 @@
 }
 
 /*******************************
-********** FADE OUT UP *********
+*********** FADE OUT **********
 *******************************/
 
 @-webkit-keyframes fadeOut {
