@@ -6,14 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Millennial Run | Huye de la vida adulta mientras aún puedes</title>
     <link rel="shortcut icon" href="./src/assets/favicon.png" type="image/x-icon" />
+    <!-- Fontawesome -->
+    <script src="https://use.fontawesome.com/c24f134052.js"></script>
     <!-- Stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display:900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./src/styles/style.scss" />
   </head>
   <body>
+    <!-- Easter egg -->
+    <section class="easter"></section>
+    <!-- Not responsive ready -->
+    <section class="not-responsive">
+      <p>😬</p>
+      <p>¡Oops! Necesitas una pantalla más grande para jugar</p>
+    </section>
     <!-- Welcome screen -->
     <section class="welcome animated fast">
-      <h1>Millennial Run</h1>
+      <h1>Adulting</h1>
+      <h2>As seen by a millennial</h2>
       <p>Presiona <img src="./src/assets/espacio.svg" alt="Espacio" /> para jugar</p>
       <div>
         <img src="./src/assets/girl.svg" alt="Millennial Girl" />
@@ -22,15 +32,30 @@
     </section>
     <!-- Canvas -->
     <section class="canvas-wrapper">
+      <!-- Score Board -->
+      <div class="score"></div>
       <canvas width="1000" height="650" class="animated slowest infinite bg-fade"></canvas>
     </section>
     <!-- Game Over -->
     <section class="game-over">
-      <h2>¿Y para cuándo los nietos?</h2>
-      <p>Muy tarde, la vida adulta te ha alcanzado. Mejor ve a descansar tu rodilla mala.</p>
+      <h2>
+        😵 <br />
+        Tu rodilla mala te ha traicionado de nuevo
+      </h2>
+      <p>¡Hey! Pero mira el lado positivo, lograste <span id="score-span">0</span> puntos.</p>
+      <p>Reta a tus amigos a superar tu puntaje</p>
+      <ul>
+        <li id="whats-share"></li>
+        <li id="fb-share"></li>
+        <li id="mail-share"></li>
+      </ul>
+      <button id="restart">Jugar de nuevo</button>
     </section>
     <!-- Audios -->
-    <audio src="./src/assets/evil-morty.mp3" id="game-over-song"></audio>
+    <audio src="./src/assets/jazz-club.mp3" id="bg-song"></audio>
+    <audio src="./src/assets/game-over.mp3" id="game-over-song"></audio>
+    <!-- Sound Effect by: LloydEvans09 from freesound.org -->
+    <audio src="./src/assets/jump.wav" id="jump-sound"></audio>
     <!-- Game Script -->
     <script src="./src/scripts/main.js"></script>
   </body>
