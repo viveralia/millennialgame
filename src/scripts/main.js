@@ -29,6 +29,9 @@ const whatsSharer = document.querySelector('#whats-share')
 const fbSharer = document.querySelector('#fb-share')
 const mailSharer = document.querySelector('#mail-share')
 const restartButton = document.querySelector('#restart')
+// Easter
+const ad = document.querySelector('.easter')
+const close = document.querySelector('#close')
 
 /***********************************************/
 /******************* CLASSES ******************/
@@ -204,6 +207,7 @@ function gameOver() {
   showGameOverScreen()
   canvasWrapper.classList.add('loser')
   gameOverSong.play()
+  ad.style.display = 'block'
 }
 
 function updateShareLinks() {
@@ -239,4 +243,8 @@ addEventListener('keyup', e => {
 
 restartButton.addEventListener('click', () => {
   location.reload()
+})
+
+close.addEventListener('click', () => {
+  ad.style.display = 'none'
 })

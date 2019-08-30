@@ -1,0 +1,27 @@
+.easter {
+  display: none;
+  z-index: 10;
+  text-align: center;
+  background: #006847;
+  padding: 5rem;
+  border-radius: 10px;
+  & > img:first-child {
+    width: 300px;
+    margin-bottom: 1rem;
+  }
+  a {
+    display: block;
+    img {
+      width: 150px;
+    }
+  }
+  button {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 50%;
+    border: none;
+  }
+}
